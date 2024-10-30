@@ -1,0 +1,38 @@
+/* Styles for screens smaller than 320px */
+@media (max-width: 320px) {
+    .header-logo-img {
+      width: 50px;
+    }
+    .header-nav {
+      display: none;
+    }
+    .header-options {
+      display: none;
+    }
+    .first-screen-body {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .first-screen-body__company {
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .first-screen-body__card {
+      width: auto;
+      text-align: center;
+    }
+    .first-screen-body__company p {
+      font-size: 16px;
+    }
+    .first-screen-body__company h1 {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    .first-screen-body__card h2 {
+      font-size: 20px;
+    }
+    .delay-4 {
+      width: 100%;
+    }
+  }
+  

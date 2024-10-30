@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gilroy";
+  font-weight: 700;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+.wrapper {
+  background-color: var(--background-color);
+  padding-top: 300px;
+}
+.container {
+  max-width: 1920px;
+}
+
+.first-screen {
+  background: center/ cover no-repeat;
+  background-image: url(../../public/firstScreenBG.png);
+  height: 1081px;
+}
+
+.header {
+  padding-bottom: 502px;
+}
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  position: relative;
+}
+.blur {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header-options {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.header-options > label {
+  padding-right: 56px;
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.header-nav__item {
+  padding-right: 56px;
+  list-style: none;
+}
+.header-nav__item:last-child {
+  padding-right: 0;
+}
+.header-language {
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-screen-body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.first-screen-body__company {
+  color: var(--white);
+  width: 677px;
+}
+
+.first-screen-body__company p {
+  height: 17px;
+
+  font-size: 24px;
+}
+
+.first-screen-body__company h1 {
+  height: 255px;
+
+  font-size: 150px;
+  line-height: 150px;
+  margin: 40px 0 0 0;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+.fade-in.delay-0 {
+    animation-delay: 0.1s;
+}
+.fade-in.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.fade-in.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.fade-in.delay-3 {
+    animation-delay: 0.9s;
+}
+.fade-in.delay-4 {
+    animation-delay: 0.12s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.first-screen-body__card {
+  color: var(--white);
+  width: 490px;
+  text-align: end;
+}
+
+.first-screen-body__card h2 {
+  font-size: 42px;
+  line-height: 46.2px;
+  color: var(--white);
+}
+.first-screen-body__card h2:last-child {
+    margin-bottom: 40px;
+}
+.delay-2 span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.delay-4 {
+  cursor: pointer;
+  color: black;
+  background-color: var(--primary-color);
+  width: 240px;
+  height: 48px;
+  border-radius: 24px;
+}
+.secondScreen {
+    padding-bottom: 40px;
+}
+
+.slider {
+  margin-left: 40px;
+  position: relative;
+  z-index: 10;
+}
+.slider-container {
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.slider-title {
+  position: absolute;
+  top: -180px;
+  color: var(--white);
+  width: 1261px;
+  height: 154px;
+  margin-left: 146px;
+  font-size: 220px;
+  line-height: 242px;
+  z-index: 10;
+}
+
+.slider-track {
+  position: relative;
+  width: 100wh;
+  display: flex;
+  gap: 40px;
+  transition: all ease 1s;
+}
+.slide {
+  display: flex;
+  align-items: end;
+  position: relative;
+  height: 700px;
+  /* width: auto; */
+  width: 665px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: var(--white);
+  overflow: hidden;
+}
+.slide-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-content {
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 60px 60px 60px;
+}
+
+.slider-caption__title {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.prev {
+  transform: rotate(180deg);
+}
+
+.prev,
+.next {
+  width: 70px;
+  height: 70px;
+  padding: 22px;
+  border-radius: 40px;
+  background-color: var(--white);
+}
+
+.slider-content > img {
+  background-color: var(--primary-color);
+  width: 70px;
+  height: 70px;
+  padding: 22px;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.about-paragraph {
+  width: 925px;
+  height: 309px;
+  font-size: 42px;
+  line-height: 40px;
+  z-index: 10;
+}
+
+.about-paragraph span {
+    color: var(--white);
+}
+
+.expirience{
+
+    width: 1228px;
+    height: 98px;
+    font-size: 140px;
+    line-height: 154px;
+}
+
+
+.intersect-right {
+    position: absolute;
+    bottom:-750px;
+}
+
+
+.footer {
+    background: center/ cover no-repeat;
+    background-image: url(/public/footerBG.png);
+    height: 1100px;
+}
+
